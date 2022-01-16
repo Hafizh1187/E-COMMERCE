@@ -8,13 +8,13 @@
 
         <!--Start Header-->
         <a name="up"></a>
-        <img src="Arema.jpg" width="100%">
+        <img src="/image/Arema.jpg" width="100%">
         <!--End Header-->
 
         <!--Start Navbar-->
         <center>
             <div class="topnav">
-                <a href="home.html">HOME</a>
+                <a href="index.html">HOME</a>
                 <a href="about.html">ABOUT</a>
                 <a href="#">PRODUCT</a>
                 <a href="guestbook.php">GUESTBOOK</a>
