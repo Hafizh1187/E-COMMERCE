@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ABOUT|AremaFansStore</title>
+    </head>
+    <body>
+        <link rel="stylesheet" type="text/css" href="about.style.css"/>
+
+        <!--Start Header-->
+        <a name="up"></a>
+        <img src="Arema.jpg" width="100%">
+        <!--End Header-->
+
+        <!--Start Navbar-->
+        <center>
+            <div class="topnav">
+                <a href="home.html">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="product.html">PRODUCT</a>
+                <a href="guestbook.php">GUESTBOOK</a>
+            </div>
+            <br>
+        </center>
+        <!--End Navbar-->
+        
+        <center>
+            <img src="Logo.jpg" width="25%">
+        </center>
+
+        <div class="content">
+            <right>
+                <p>&nbsp
+                    The impression of Reborn for a Better Future is embedded in the new Arema FC logo. Aremania (Arema supporters) and the Indonesian football public through the logo are invited to return to gratitude for the birth of Arema on August 11, 1987. In addition, this logo also inserts an appreciation of the golden generation of Arema FC when they won the Galatama League in 1993. The trick is to include a picture of a lion on the back of the logo. in the logo.
+                </p>
+                <p>&nbsp
+                    The products we sell are Jersey, Syal, T-shirt, and various other products.
+                </p>
+                <p>&nbsp
+                    The advantages of the products we sell are the authenticity of the product, sealed packaging, shipping using bubble wrap so it is safe for consumers to receive when shipping.
+                </p>
+            </right>
+        </div>
+        <br>
+
+        <div class="content2">
+            <p><u>
+                Arema Fans Store
+            </u></p>
+            <center>
+            <video width="600" controls>
+                <source src="arm.mp4" type="video/mp4">
+                Your browser does not support HTML5 video
+            </video>
+            </center>
+        </div>
+
+        <h4 align="center" id="tanggal"></h4>
+        <div class="jam_digital" id="jam_digital">
+            <div class="kotak">
+                <p id="jam"></p>
+            </div>
+            <div class="kotak">
+                <p id="menit"></p>
+            </div>
+            <div class="kotak">
+                <p id="detik"></p>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var tgl = new Date();
+            document.getElementById("tanggal").innerHTML = "Waktu Akses "+tgl;
+            window.setTimeout("waktu()", 1000);
+            function waktu(){
+                var waktu = new Date();
+                setTimeout("waktu()", 1000);
+                document.getElementById("jam").innerHTML = waktu.getHours();
+                document.getElementById("menit").innerHTML = waktu.getMinutes();
+                document.getElementById("detik").innerHTML = waktu.getSeconds();
+            }
+        </script>
+
+        <!--Start Footer-->
+        <p align="center"><font face="Tw Cen MT Condensed Extra Bold"><b>Copyright @2022 Hafizh Sandika Akbar</b></font></p>
+        <div class="content2">
+            <p align="right"><a href="#up"><font face="MV Boli" color="black">Back To Top</font></a></p>
+        </div>
+        <!--End Footer-->
+    </body>
+</html>

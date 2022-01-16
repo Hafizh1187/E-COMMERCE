@@ -1,0 +1,45 @@
+body{
+    background-color: #C9B09A;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: #A77D54;
+}
+
+.topnav a{
+    font-family: 'Courier New', Courier, monospace;
+    float: center;
+    display: inline;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+    background-color: #885A3A;
+    color: black;
+}
+
+.jam_digital{
+    overflow: hidden;
+    width: 180px;
+    margin: 20px auto;
+    border: 5px solid #DBD0BD;
+    background-color:#A77D54;
+}
+
+.kotak{
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+.jam_digital p{
+    color: black;
+    font-size: 21px;
+    text-align: center;
+    margin-top: 18px;
+}

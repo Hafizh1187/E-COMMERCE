@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PRODUCT|AremaFansStore</title>
+    </head>
+    <body>
+        <link rel="stylesheet" type="text/css" href="product.style.css"/>
+
+        <!--Start Header-->
+        <a name="up"></a>
+        <img src="Arema.jpg" width="100%">
+        <!--End Header-->
+
+        <!--Start Navbar-->
+        <center>
+            <div class="topnav">
+                <a href="home.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="#">PRODUCT</a>
+                <a href="guestbook.php">GUESTBOOK</a>
+            </div>
+            <br>
+        </center>
+        <!--End Navbar-->
+        
+        <center>
+        <div class="gambar">
+            <section>
+            <div class="foto">
+                <img src="jersey.jpg" width="100%">
+                <h1><font face="MV Boli">Jersey Arema</font></h1>
+                <p>Rp 250.000</p>
+                <br>
+                <a href="detailproduk1.html">Detail Produk</a>
+                <br>
+                <br>
+                <br>
+                <a href="buynow.php">Buy Now</a>
+            </div>
+            </section>
+
+            <section>
+            <div class="foto">
+                <img src="t-shirt.jpg" width="100%">
+                <h1><font face="MV Boli">T-Shirt Arema</font></h1>
+                <p>Rp 80.000</p>
+                <br>
+                <a href="detailproduk2.html">Detail Produk</a>
+                <br>
+                <br>
+                <br>
+                <a href="buynow.php">Buy Now</a>
+            </div>
+            </section>
+
+            <section>
+            <div class="foto">
+                <img src="syal.jpg" width="100%">
+                <h1><font face="MV Boli">Made Class rajut Arema POLAND X Arema</font></h1>
+                <p>Rp 595.000</p>
+                <br>
+                <a href="detailproduk3.html">Detail Produk</a>
+                <br>
+                <br>
+                <br>
+                <a href="buynow.php">Buy Now</a>
+            </div>
+            </section>
+
+            <section>
+            <div class="foto">
+                <img src="flag.jpg" width="100%">
+                <h1><font face="MV Boli">Bendera Aremania</font></h1>
+                <p>Rp 99.000</p>
+                <br>
+                <a href="detailproduk4.html">Detail Produk</a>
+                <br>
+                <br>
+                <br>
+                <a href="buynow.php">Buy Now</a>
+            </div>
+            </section>
+
+            <section>
+            <div class="foto">
+                <img src="gelang.jpg" width="100%">
+                <h1><font face="MV Boli">Gelang</font></h1>
+                <p>Rp 25.000</p>
+                <br>
+                <a href="detailproduk5.html">Detail Produk</a>
+                <br>
+                <br>
+                <br>
+                <a href="buynow.php">Buy Now</a>
+            </div>
+            </section>
+            <script>
+                $(document).ready(function(){
+                    $(".read").click(function(){
+                        $(this).prev().toggle();
+                        $(this).siblings('.dots').toggle();
+                        if($(this).text()=='Read More'){
+                            $(this).text('Read Less');
+                        }
+                        else{
+                            $(this).text('Read');
+                        }
+                    });
+                });
+            </script>
+        </div>
+        </center>
+        
+        <h4 align="center" id="tanggal"></h4>
+        <div class="jam_digital" id="jam_digital">
+            <div class="kotak">
+                <p id="jam"></p>
+            </div>
+            <div class="kotak">
+                <p id="menit"></p>
+            </div>
+            <div class="kotak">
+                <p id="detik"></p>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var tgl = new Date();
+            document.getElementById("tanggal").innerHTML = "Waktu Akses "+tgl;
+            window.setTimeout("waktu()", 1000);
+            function waktu(){
+                var waktu = new Date();
+                setTimeout("waktu()", 1000);
+                document.getElementById("jam").innerHTML = waktu.getHours();
+                document.getElementById("menit").innerHTML = waktu.getMinutes();
+                document.getElementById("detik").innerHTML = waktu.getSeconds();
+            }
+        </script>
+
+        <!--Start Footer-->
+        <p align="center"><font face="Tw Cen MT Condensed Extra Bold"><b>Copyright @2022 Hafizh Sandika Akbar</b></font></p>
+        <div class="content2">
+            <p align="right"><a href="#up"><font face="MV Boli" color="black">Back To Top</font></a></p>
+        </div>
+        <!--End Footer-->
+    </body>
+</html>

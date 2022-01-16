@@ -1,0 +1,69 @@
+body{
+    background-color: #7b9aaf;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: #3d6396;
+}
+
+.topnav a{
+    font-family: 'Courier New', Courier, monospace;
+    float: center;
+    display: inline;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+    background-color: #f6f5f8;
+    color: black;
+}
+
+.gambar{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.gambar.fotoimg{
+    width: 300px;
+}
+
+.foto{
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.foto a{
+    border: 1px;
+    padding: 10px;
+    color: black;
+    background: #1d7bb1;
+    text-decoration: none;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.jam_digital{
+    overflow: hidden;
+    width: 180px;
+    margin: 20px auto;
+    border: 5px solid #DBD0BD;
+    background-color:#A77D54;
+}
+
+.kotak{
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+.jam_digital p{
+    color: black;
+    font-size: 21px;
+    text-align: center;
+    margin-top: 18px;
+}
